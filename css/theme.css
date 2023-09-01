@@ -72,6 +72,54 @@
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd; }
 
+
+  /* Logo Slider Styles Start */
+
+  .slide-img {
+    max-width: 200px;
+    /* height: 100px; */
+    animation: scroll 60s linear infinite;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+  .slider {
+    margin-top: 70px;
+    /* background-color: whitesmoke; */
+    padding: 3em 2em;
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-1000%)}
+  }
+
+   /* Logo Slider Styles End */
+
+   .team-img {
+    width: 200px;
+    border-radius: 15%;
+    margin-bottom: 15px;
+  }
+
+  .hero-wrapper {
+    height: 100vh;
+  }
+
+  .hero-container {
+    height: inherit;
+  }
+
 *,
 *::before,
 *::after {
@@ -522,7 +570,7 @@ progress {
   margin-right: auto;
   margin-left: auto; }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px; } }
 
@@ -540,7 +588,7 @@ progress {
 
 @media (min-width: 1680px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1600px; } }
+    max-width: 1600px; } } */
 
 .row {
   --bs-gutter-x: 3vw;
@@ -2892,7 +2940,9 @@ textarea.form-control-lg {
     .nav-link {
       transition: none; } }
   .nav-link:hover, .nav-link:focus {
-    color: var(--bs-nav-link-hover-color); }
+    color: var(--bs-nav-link-hover-color);
+    text-decoration: underline;
+  }
   .nav-link.disabled {
     color: var(--bs-nav-link-disabled-color);
     pointer-events: none;
@@ -8910,6 +8960,7 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: rgba(255, 255, 255, 0.9); }
+  /* background-color: white; */
 
 .display-big {
   font-size: 7rem; }
